@@ -1,10 +1,11 @@
-print("Hello world, This is first program")
+print("Welcome To Name And Age show")
 
+name = input("Enter your name:")
+age = int(input("Age:"))
 def say_hello():
-    print("hello from function")
-
-
+    print(f'Hello, {name} \nage {age}')
 
 say_hello()
+
 
 
