@@ -3,7 +3,8 @@ def binary_search(arr, target):
     right = len(arr) - 1
     while left <= right:
         mid = (left + right) // 2
-        if arr[mid] == target:
+
+        if target == arr[mid]:
             return mid
         elif target > arr[mid]:
             left = mid + 1
@@ -12,8 +13,5 @@ def binary_search(arr, target):
     
     return -1
 
-
-arr = [1, 3, 5, 7, 9, 11]
-target = 11
-result = binary_search(arr, target)
+result = binary_search([1,5,8,7,9,9,100], 9)
 print(result)
